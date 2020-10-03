@@ -57,6 +57,8 @@ router.get("/api/seat-availability", async (req, res) => {
 
 let lastBookingAttemptSucceeded = false;
 
+
+
 router.post("/api/book-seat", async (req, res) => {
   const { seatId, creditCard, expiration } = req.body;
 
