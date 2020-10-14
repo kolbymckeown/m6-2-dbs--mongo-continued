@@ -13,6 +13,7 @@ function TicketWidget() {
     state: { hasLoaded, seats, numOfRows, seatsPerRow },
   } = React.useContext(SeatContext);
 
+
   if (!hasLoaded) {
     return <CircularProgress />;
   }
@@ -28,7 +29,7 @@ function TicketWidget() {
             {range(seatsPerRow).map((seatIndex) => {
               const seatId = `${rowName}-${getSeatNum(seatIndex)}`;
               const seat = seats[seatId];
-
+              
               return (
                 <SeatWrapper key={seatId}>
                   <Seat

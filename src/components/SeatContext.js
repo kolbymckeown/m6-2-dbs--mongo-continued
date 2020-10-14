@@ -15,7 +15,7 @@ function reducer(state, action) {
       return {
         ...state,
         hasLoaded: true,
-        seats: action.seats,
+        seats: action.data,
         numOfRows: action.numOfRows,
         seatsPerRow: action.seatsPerRow,
       };

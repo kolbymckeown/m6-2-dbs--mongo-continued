@@ -36,6 +36,7 @@ const putSeats = async (req, res) => {
   }
 };
 
+// Adds the seats into the database
 // putSeats()
 
 module.exports = { putSeats }
